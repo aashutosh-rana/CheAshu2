@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cheashu-dev-122149-authRole",
+      "UnauthRoleArn": "arn:aws:iam::257131514602:role/amplify-cheashu-dev-122149-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::257131514602:role/amplify-cheashu-dev-122149-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-cheashu-dev-122149-deployment",
+      "UnauthRoleName": "amplify-cheashu-dev-122149-unauthRole",
+      "StackName": "amplify-cheashu-dev-122149",
+      "StackId": "arn:aws:cloudformation:ap-south-1:257131514602:stack/amplify-cheashu-dev-122149/c1a103c0-c35a-11eb-9a4d-0aefe137baa8",
+      "AmplifyAppId": "d2bb9d41nr8wns"
+    }
+  }
+}

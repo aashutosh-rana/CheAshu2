@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_bottomsheet_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="8dp"
+        android:text="Select Property type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_margin="8dp"
+            android:layout_alignParentEnd="true"
+            android:text="Free"
+            app:drawableEndCompat="@drawable/ic_baseline_star_24" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/apartment"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Apartment"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/property_type_background"
+            android:textSize="15sp"
+            android:checkable="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <TextView
+            android:id="@+id/simpleFlat"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="Simple flat"
+            android:padding="10dp"
+            android:background="@drawable/property_type_background"
+            android:textSize="15sp"
+            android:checkable="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/houses"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/property_type_background"
+            android:text="Houses"
+            android:textSize="15sp"
+            android:checkable="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/farmHouse"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/property_type_background"
+            android:text="Farmhouse"
+            android:textSize="15sp"
+            android:checkable="true"
+            android:layout_margin="5dp"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <TextView
+            android:padding="10dp"
+            android:background="@drawable/property_type_background"
+            android:id="@+id/villa"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Villa"
+            android:textSize="15sp"
+            android:checkable="true"
+            android:layout_margin="5dp"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+
+        <TextView
+            android:padding="10dp"
+            android:background="@drawable/property_type_background"
+            android:id="@+id/pg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Pg"
+            android:textSize="15sp"
+            android:checkable="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="10dp"
+            android:background="@drawable/property_type_background"
+            android:id="@+id/commercialSpace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Commercial space"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:checkable="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <TextView
+            android:padding="10dp"
+            android:background="@drawable/property_type_background"
+            android:id="@+id/hostel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Hostel"
+            android:textSize="15sp"
+            android:checkable="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="10dp"
+            android:background="@drawable/property_type_background"
+            android:id="@+id/doubleRoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Only double room"
+            android:textSize="15sp"
+            android:checkable="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+        <TextView
+            android:padding="10dp"
+            android:background="@drawable/property_type_background"
+            android:id="@+id/singleRoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Only single room"
+            android:textSize="15sp"
+            android:checkable="true"
+            style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:background="@drawable/property_type_background"
+        android:id="@+id/marriageHall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Marriage hall/Banquet hall"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp"
+        android:checkable="true"
+        style="@style/Widget.MaterialComponents.Chip.Filter"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Note: commercial spaces like warehouse, shop, showroom, office, coaching center etc"
+        android:textSize="15sp"
+        android:textColor="@android:color/tertiary_text_dark"
+        android:textStyle="italic"
+        android:checkable="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+</LinearLayout>

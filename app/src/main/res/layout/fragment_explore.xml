@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.fragment.ExploreFragment"
+    android:background="@color/white">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".dashboard.fragment.ExploreFragment"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:background="@drawable/rounded_explore_background"/>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"/>
+
+        <Button
+            android:id="@+id/btnPostProperty"
+            android:layout_toStartOf="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:text="Post property"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="1dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_alignParentEnd="true"
+            android:text="Free"
+            app:drawableEndCompat="@drawable/ic_baseline_star_24" />
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_toStartOf="@+id/btnPostProperty"
+            android:layout_width="match_parent"
+            app:queryHint="Search here......"
+            app:searchIcon="@drawable/ic_baseline_search_24"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_below="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="What are you looking for?"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"/>
+
+        <HorizontalScrollView
+            android:id="@+id/scrl"
+            android:layout_below="@+id/v1"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                      android:id="@+id/relativeFlat"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgFlat"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgFlat"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Simple flat"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeApartment"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgApartment"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgApartment"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Apartment"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeMarriageHall"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgMarriageHall"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgMarriageHall"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Marriage Hall/ Banquiet hall"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeCommercial"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgCommercial"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgCommercial"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Coaching"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativePg"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgPg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgPg"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Pg"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeVilla"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgVilla"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgVilla"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Villa"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeHouse"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgHouse"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgHouse"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Villa"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeHostel"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgHostel"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgHostel"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Villa"/>
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeFarmHouse"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_rectangle_background"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgFarmHouse"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/imgFarmHouse"
+                        android:layout_width="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:text="Villa"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_below="@+id/scrl"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="In your area"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/redcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_below="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:text="Simple Flat"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSimpleFlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"/>
+
+        </RelativeLayout>
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:text="Marriage Hall"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerFlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+</ScrollView>

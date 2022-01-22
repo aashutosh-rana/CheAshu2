@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detailMarriageHall">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c1"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/imgMarriageHall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/welcome_walkthrough"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgBookmark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_bookmark_border_24"
+                    android:layout_margin="20dp"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+                <!--            <TextView-->
+                <!--                android:id="@+id/txtOwnerName"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="Owner name"-->
+                <!--                android:textStyle="bold"-->
+                <!--                android:textSize="20sp"-->
+                <!--                android:textColor="@color/black"-->
+                <!--                android:layout_marginTop="10dp"/>-->
+
+                <!--                </LinearLayout>-->
+
+                <TextView
+                    android:id="@+id/txtHallName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall name"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtCityName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="city name"
+                        android:textStyle="normal"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtFullAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="full address"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="2dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnShowLocation"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:text="Location"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rectangle_background"
+                    android:layout_height="wrap_content"
+                    />
+
+                <Button
+                    android:id="@+id/btnEnquiry"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:drawableEnd="@drawable/ic_baseline_call_24"
+                    android:text="Enquiry"
+                    android:paddingHorizontal="5dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rectangle_background"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

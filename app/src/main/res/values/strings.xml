@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">CheAshu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explore">Explore</string>
+    <string name="filter">Filter</string>
+    <string name="notification">Notification</string>
+    <string name="more">More</string>
+    <string name="v1">Verify OTP</string>
+    <string name="logout">logout</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="about_us">About us</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="history">History</string>
+    <string name="my_uploads">My Uploads</string>
+    <string name="pin_code_property">Pin code (property)</string>
+
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="last_update_time_label">Last location update time</string>
+
+    <string name="start_updates">Start updates</string>
+    <string name="stop_updates">Stop updates</string>
+    <string name="location_updated_message">Location updated</string>
+    <string name="basic_details">BASIC DETAILS</string>
+
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="description_info">Info</string>
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="intro_message">Intro message.</string>
+
+    <string name="camera">Camera</string>
+    <string name="folder">Folder</string>
+    <string name="done">Done</string>
+    <string name="min_rent">Min. rent</string>
+    <string name="max_rent">Max. rent</string>
+    <string name="_1st">1st</string>
+    <string name="other_floor">Other floor</string>
+    <string name="et_1">Please select all tags related to your property, it will gives higher chance to rent your property soon</string>
+    <string name="no_history_found">No history found</string>
+    <string name="delete_all">delete all</string>
+    <string name="please_tell_us_issue_in_detail">Please tell us issue in detail</string>
+    <string name="ruppee">₹</string>
+
+</resources>

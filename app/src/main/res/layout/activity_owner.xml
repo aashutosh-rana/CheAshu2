@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.activity.OwnerActivity"
+    android:background="@android:color/darker_gray">
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".dashboard.activity.OwnerActivity"
+    android:layout_centerInParent="true"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/basic_details"
+                    android:textSize="20sp"
+                    android:textColor="#F5F5F5"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:padding="5.7dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_left_corner_bg">
+                                <ImageView
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/ic_baseline_person_24"
+                                    android:scaleType="center"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+                            </LinearLayout>
+                            <EditText
+                                android:id="@+id/etOwnerName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_right_corner_bg"
+                                android:hint="Owner name(required)"
+                                android:inputType="textPersonName"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="16dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="1dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:padding="5.7dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_left_corner_bg">
+                                <ImageView
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/ic_baseline_email_24"
+                                    android:scaleType="center"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+                            </LinearLayout>
+                            <EditText
+                                android:id="@+id/etEmail"
+                                android:inputType="textEmailAddress"
+                                android:hint="Owner Email (required)"
+                                android:maxLines="2"
+                                android:maxLength="40"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_right_corner_bg"
+                                android:padding="16dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:padding="5.7dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_left_corner_bg">
+                                <ImageView
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/ic_baseline_location_city_24"
+                                    android:scaleType="center"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/etCity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_right_corner_bg"
+                                android:hint="City name(required)"
+                                android:inputType="textPersonName"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="16dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:padding="5.7dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_left_corner_bg">
+                                <ImageView
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="center"
+                                    android:layout_width="40dp"
+                                    android:src="@drawable/ic_baseline_person_pin_circle_24"
+                                    android:layout_height="40dp"/>
+                            </LinearLayout>
+                            <EditText
+                                android:id="@+id/etFullAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_right_corner_bg"
+                                android:hint="Full Address(required)"
+                                android:inputType="textPersonName"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="16dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:padding="5.7dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_left_corner_bg">
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="center"
+                                    android:text="@string/ruppee"
+                                    android:layout_width="40dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="25sp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_height="40dp"/>
+                            </LinearLayout>
+                            <EditText
+                                android:id="@+id/etMonthlyRent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_right_corner_bg"
+                                android:hint="Monthly rent(required)"
+                                android:inputType="textPersonName"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="16dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:padding="5.7dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_left_corner_bg">
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="center"
+                                    android:text="₹"
+                                    android:layout_width="40dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="25sp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_height="40dp"/>
+                            </LinearLayout>
+                            <EditText
+                                android:id="@+id/etMaintenanceCharge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_right_corner_bg"
+                                android:hint="Maintenance charge(Optional)"
+                                android:inputType="textPersonName"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="16dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:padding="5.7dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_left_corner_bg">
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:scaleType="center"
+                                    android:text="₹"
+                                    android:layout_width="40dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="25sp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_height="40dp"/>
+                            </LinearLayout>
+                            <EditText
+                                android:id="@+id/etSecurityMoney"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_right_corner_bg"
+                                android:hint="Security money(Optional)"
+                                android:inputType="textPersonName"
+                                android:maxLength="50"
+                                android:maxLines="1"
+                                android:padding="16dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="1dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:padding="5.7dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/blue_left_corner_bg">
+                                <ImageView
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/ic_baseline_home_work_24"
+                                    android:scaleType="center"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+                            </LinearLayout>
+                            <EditText
+                                android:id="@+id/etBuildingName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_right_corner_bg"
+                                android:hint="Building name(Optional)"
+                                android:inputType="textPersonName"
+                                android:maxLength="100"
+                                android:maxLines="2"
+                                android:padding="16dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/btnProceed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_btn_bg"
+                    android:text="Proceed"
+                    android:layout_marginTop="30dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:padding="10dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="step 1"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--> step 2(Amenities)"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

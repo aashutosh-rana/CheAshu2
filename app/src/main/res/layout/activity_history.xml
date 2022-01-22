@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drawer.activity.HistoryActivity">
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+    <SearchView
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search here......"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="2dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/etSearch"
+        android:id="@+id/recyclerHistory"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDeleteAll"
+        />
+    <TextView
+        android:id="@+id/txtItemNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_history_found"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="@string/delete_all"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:background="#053754"
+        android:layout_marginBottom="3dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.activity.MarriageHallDetailActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relativeProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/txtItemNotFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No result found, please try on other one"
+            android:layout_below="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <SearchView
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:queryHint="search here...(price,address,bhk etc)"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMarriageHall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/marriagehall_item_list"/>
+</LinearLayout>
